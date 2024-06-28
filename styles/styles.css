@@ -1,0 +1,946 @@
+/******************************
+* General
+******************************/
+@font-face {
+  font-family: 'Anta';
+  font-style: normal;
+  src: url('../fonts/Anta-Regular.ttf');
+
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  background-image: url('../images/body-bg.jpg');
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Anta';
+  color: white;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+
+
+
+/* #region Header */
+/******************************
+* Header
+******************************/
+
+header nav {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+
+  background-color: black;
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+header nav a:link,
+header nav a:visited {
+  color: white;
+  font-size: 1.4rem;
+  text-decoration: none;
+
+  padding-bottom: 0.3%;
+  border-bottom: 2px solid transparent;
+  transition: border 1s;
+}
+
+header nav a:hover {
+  color: gray;
+  border-bottom: 2px solid gray;
+  transition: border 1s;
+}
+
+header nav a:active {
+  border-bottom: transparent;
+}
+
+header nav li {
+  display: inline;
+  padding-right: 7rem;
+}
+
+header img {
+  width: 150px;
+}
+
+#logo-no-border>a:link {
+  border: none;
+}
+
+/* #endregion */
+
+
+
+/* #region Main */
+
+/* #region [Index--Home] */
+#index-banner {
+  /* h1, menu list*/
+  background-image: url('../images/index-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 53rem;
+  text-align: center;
+
+  margin-bottom: 8rem;
+}
+
+#index-banner h1 {
+  font-size: 1.5rem;
+  font-weight: lighter;
+  padding-top: 5rem;
+  padding-bottom: 6rem;
+}
+
+#menu-list a:link,
+#menu-list a:visited,
+.content a:link,
+.content a:visited {
+  /* ALL Links */
+  background-color: rgb(22, 142, 172);
+  border-radius: 2rem;
+  padding: 0.8rem 1.1rem;
+
+  /* Text Inside Box*/
+  font-size: 1.2rem;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#menu-list a:hover,
+.content a:hover {
+  background-color: silver;
+  color: black;
+}
+
+#menu-list li {
+  display: inline;
+  margin-right: 2rem;
+}
+
+
+.container {
+  /* Background  For Each Model - Container*/
+  background-color: rgba(0, 0, 0, 0.700);
+  border: 1px solid gray;
+  border-radius: 1.7rem;
+  width: 60%;
+
+  background-image: url('../images/logo-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: 88%;
+
+  /* Box Location */
+  margin: auto auto 2rem auto;
+
+  display: flex;
+
+}
+
+
+
+.content {
+  /* Left Side - h1,p,Read More */
+  padding: 2.5rem 1.5rem 5rem 3rem;
+}
+
+.content h2 {
+  font-size: 5rem;
+}
+
+.content p {
+  font-size: 1.7rem;
+  padding-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.images img {
+  width: 420px;
+}
+
+.images {
+  /* Center Car Image */
+  margin: auto;
+  padding-right: 1.2rem;
+}
+
+/* #endregion */
+
+/* #region [About Us] */
+main figure {
+  text-align: center;
+  margin-top: 2.5rem;
+}
+
+#about-us-wallpaper {
+  width: 55%;
+  border: 2px solid silver;
+  border-radius: 2rem;
+}
+
+
+#about-us-container {
+  display: flex;
+}
+
+#about-us-container>div {
+  padding: 5rem 4rem 0rem 4rem;
+}
+
+#about-us-container h1 {
+  font-size: 4.5rem;
+  margin-bottom: 1rem;
+}
+
+#about-us-container h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+#about-us-container p {
+  font-size: 1.4rem;
+  padding-bottom: 1.5rem;
+}
+
+p+img {
+  width: 70%;
+  border: 2px solid silver;
+  border-radius: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* #endregion */
+
+/* #region [Contact Us] */
+
+#contact-title {
+  /* h1  Contact Us */
+  border: 1px solid silver;
+  border-radius: 0.5rem;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.500);
+
+  /* Text Inside Border */
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 1.3rem 0rem;
+
+  /* The Box Location*/
+  margin: 3rem auto;
+}
+
+#contact-explain {
+  /* h1 Seconed Line */
+  font-size: 1.3rem;
+  font-weight: lighter;
+}
+
+
+#container-contact {
+  display: flex;
+  margin: auto 20% auto 25%;
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.700);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+#contact-info {
+  padding-left: 4rem;
+}
+
+#contact-info h2 {
+  font-size: 2.3rem;
+}
+
+#contact-info p {
+  font-size: 1.3rem;
+  padding-top: 1rem;
+}
+
+
+
+
+#first-name-field,
+#last-name-field,
+#email-field,
+#country-field {
+  /* White box size*/
+  padding: 1rem;
+
+  /* space from ech other*/
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  border: none;
+}
+
+#textarea-field {
+  /* Message*/
+  width: 20rem;
+  height: 10rem;
+  border-radius: 1rem;
+  border: none;
+
+  /* The text*/
+  padding-top: 1rem;
+  padding-left: 1rem;
+}
+
+#license-field {
+  font-size: 1.5rem;
+  margin: 1rem auto;
+}
+
+.input-group a:link,
+.input-group a:visited {
+  /* License*/
+  color: rgba(255, 166, 0, 0.904);
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+}
+
+.input-group a:hover {
+  color: rgba(255, 166, 0, 0.507);
+}
+
+#submit-field {
+  font-family: 'Anta';
+  font-size: 1.4rem;
+  color: white;
+  background-color: rgb(31, 99, 33);
+  cursor: pointer;
+  border-radius: 1.5rem;
+  border: none;
+  padding: 0.6rem 1.2rem;
+}
+
+
+
+
+/* #endregion */
+
+/* #region [Accessibility] */
+
+#accessibility {
+  padding-left: 3rem;
+}
+
+
+#accessibility h1 {
+  padding-top: 7rem;
+  font-size: 3.3rem;
+}
+
+#accessibility h2 {
+  font-size: 2.3rem;
+  padding-top: 5rem;
+}
+
+#accessibility p {
+  font-size: 1.45rem;
+  padding-right: 8rem;
+}
+
+#accessibility ul {
+  margin-top: 0.8rem;
+  padding-left: 5rem;
+  font-size: 1.35em;
+  font-style: italic;
+  list-style: circle;
+}
+
+/* #endregion */
+
+/* #endregion */
+
+
+
+/* #region Footer */
+/******************************
+* Footer
+******************************/
+#wrapper {
+  /* The Box Border */
+  border: 1px solid gray;
+  border-radius: 0.5rem;
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0.700);
+
+  text-align: center;
+  font-size: 1.1rem;
+  padding-top: 1rem;
+
+  margin: 8rem auto 4rem auto;
+}
+
+nav+p {
+  padding-bottom: 1rem;
+}
+
+footer nav a:link,
+footer nav a:visited {
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+footer nav a:hover {
+  color: gray;
+}
+
+header nav a:active {
+  border-bottom: transparent;
+}
+
+footer nav li {
+  /* The elements in the lists*/
+  display: inline;
+  margin-right: 0.5rem;
+
+}
+
+#social-media img {
+  /* Social Media Icons */
+  width: 25px;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+
+/* #endregion */
+
+
+
+
+
+
+/* #region Responsive */
+
+/* Laptop  ,Landscape, Larsge Screens */
+@media screen and (max-width:1650px) {
+
+  /* #region Header */
+  header nav a:link {
+    font-size: 1.3rem;
+  }
+
+  header nav li {
+    padding-right: 3.5rem;
+  }
+
+  header img {
+    width: 130px;
+  }
+
+
+  /* #endregion */
+
+  /* #region [Index--Home] */
+
+  #index-banner {
+    height: 47rem;
+    margin-bottom: 4rem;
+  }
+
+  #index-banner h1 {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+
+  #menu-list a:link,
+  .content a:link {
+    padding: 0.6rem 0.9rem;
+  }
+
+
+  #menu-list li {
+    margin-right: 0.5rem;
+  }
+
+  .container {
+    width: 98%;
+    background-position: center;
+    flex-wrap: wrap;
+  }
+
+  .content {
+    /* Left Side - h1,p,Read More */
+    padding: 2.5rem 4rem 0rem 4rem;
+  }
+
+  .content h2 {
+    text-align: center;
+  }
+
+  .content p {
+    font-size: 2.2rem;
+  }
+
+  .images img {
+    width: 600px;
+  }
+
+  .images {
+    padding-top: 7rem;
+    padding-bottom: 4rem;
+
+  }
+
+  /* #endregion */
+
+  /* #region [About Us] */
+
+  main figure {
+    font-size: 1.2rem;
+  }
+
+  #about-us-wallpaper {
+    width: 65%;
+    border-radius: 1rem;
+  }
+
+  #about-us-container>div {
+    padding: 4rem 1.5rem 0rem 1.5rem;
+  }
+
+  #about-us-container h1 {
+    font-size: 3.5rem;
+  }
+
+  #about-us-container h2 {
+    font-size: 2rem;
+  }
+
+  #about-us-container p {
+    font-size: 1.3rem;
+    padding-bottom: 1.5rem;
+  }
+
+  p+img {
+    width: 100%;
+  }
+
+
+  /* #endregion */
+
+  /* #region [Contact Us] */
+
+  #contact-title {
+    /* h1  Contact Us */
+    width: 85%;
+    font-size: 2.3rem;
+  }
+
+  #contact-explain {
+    /* h1 Seconed Line */
+    font-size: 1.1rem;
+  }
+
+  #container-contact {
+    /* Center the form and pargraph*/
+    margin: auto 5%;
+  }
+
+  #contact-info h2 {
+    font-size: 2rem;
+  }
+
+  #contact-info p {
+    font-size: 1.2rem;
+  }
+
+
+
+
+  /* #endregion */
+
+  /* #region [Accessibility] */
+
+  #accessibility {
+    padding-left: 1.5rem;
+  }
+
+  #accessibility h1 {
+    font-size: 3.2rem;
+  }
+
+  #accessibility h2 {
+    font-size: 2.2rem;
+  }
+
+  #accessibility p,
+  #accessibility ul {
+    padding-right: 3rem;
+  }
+
+  #accessibility ul {
+    padding-left: 1.5rem;
+  }
+
+  /* #endregion */
+
+  /* #region Footer */
+  #wrapper {
+    width: 98%;
+  }
+
+  footer nav li {
+    margin-right: 0.3rem;
+  }
+
+
+
+  /* #endregion */
+}
+
+
+
+/* Tablet, iPad Screens  */
+@media screen and (max-width:822px) {
+
+  /* #region Header */
+
+  header nav {
+    padding-left: 1.1rem;
+  }
+
+  header nav a:link {
+    font-size: 1.2rem;
+  }
+
+  header nav li {
+    padding-right: 2.1rem;
+  }
+
+  header img {
+    width: 110px;
+  }
+
+  /* #endregion */
+
+  /* #region [Index--Home] */
+
+  #index-banner h1 {
+    font-size: 1.25rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+  }
+
+  #menu-list a:link {
+    padding: 0.45rem;
+    font-size: 0.8rem;
+  }
+
+  #menu-list li {
+    margin-right: 0.2em;
+  }
+
+
+
+  .container {
+    width: 98%;
+    border-radius: 1rem;
+  }
+
+  .content {
+    /* Left Side - h1,p,Read More */
+    padding: 2.5rem 1.5rem 0rem 1.5rem;
+  }
+
+  .content h2 {
+    font-size: 4rem;
+  }
+
+  .content p {
+    font-size: 2rem;
+  }
+
+
+  .images img {
+    width: 100%;
+    padding-left: 1.5rem;
+  }
+
+  /* #endregion */
+
+  /* #region [About Us] */
+
+  main figure {
+    font-size: 1rem;
+  }
+
+  #about-us-wallpaper {
+    width: 80%;
+  }
+
+  #about-us-container {
+    flex-wrap: wrap;
+  }
+
+  #about-us-container p {
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+
+  /* #endregion */
+
+  /* #region [Contact Us] */
+
+  #contact-title {
+    /* h1  Contact Us */
+    width: 98%;
+  }
+
+  #container-contact {
+    margin: auto;
+    flex-wrap: wrap-reverse;
+  }
+
+  #contact-info h2 {
+    font-size: 2.2rem;
+  }
+
+  #contact-info p {
+    font-size: 1.4rem;
+  }
+
+  #container-contact>div:last-child {
+    /* The Paragraph */
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #container-contact>div:first-child {
+    /* The Form*/
+    padding-left: 5%;
+    padding-top: 2rem;
+  }
+
+  /* #endregion */
+
+  /* #region Footer */
+
+  nav+p,
+  footer nav a:link,
+  .footer-list-break {
+    font-size: 1rem;
+  }
+
+  #social-media img {
+    width: 23px;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+
+  /* #endregion */
+
+}
+
+
+
+/*  Mobile L, M, S -- Screens */
+@media screen and (max-width:515px) {
+
+  /* #region Header */
+  header nav {
+    padding: 0rem;
+    text-align: center;
+  }
+
+  header nav a:link {
+    font-size: 1.3rem;
+  }
+
+  header nav li {
+    padding: 0rem;
+    margin: 1rem 0rem;
+    display: block;
+  }
+
+  header img {
+    width: 140px;
+  }
+
+  /* #endregion */
+
+  /* #region [Index--Home] */
+
+  #index-banner {
+    height: 41rem;
+  }
+
+  #index-banner h1 {
+    padding-top: 2rem;
+    padding-bottom: 2.5rem;
+  }
+
+  #menu-list a:link {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  #menu-list li {
+    display: block;
+    margin-right: auto;
+    padding-bottom: 2.2rem;
+  }
+
+
+  .content {
+    /* Left Side - h1,p,Read More */
+    padding: 2rem 0.8rem 0rem 0.8rem;
+  }
+
+  .content h2 {
+    font-size: 3rem;
+  }
+
+  .content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .content a:link {
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+
+  .images img {
+    width: 100%;
+    padding-left: 1.5rem;
+  }
+
+  /* #endregion */
+
+  /* #region [About Us] */
+
+  #about-us-wallpaper {
+    width: 90%;
+  }
+
+  #about-us-container>div {
+    padding: 4rem 0.5rem 0rem 0.5rem;
+  }
+
+  #about-us-container h1 {
+    font-size: 3rem;
+  }
+
+  #about-us-container h2 {
+    font-size: 3rem;
+  }
+
+  /* #endregion */
+
+  /* #region [Contact Us] */
+
+  #contact-title {
+    /* h1  Contact Us */
+    width: 98%;
+    font-size: 2rem;
+  }
+
+  #contact-explain {
+    /* h1 Seconed Line */
+    font-size: 0.8rem;
+  }
+
+  #container-contact>div:last-child {
+    /* The Paragraph */
+    padding-left: 2%;
+    padding-right: 0%;
+  }
+
+  #textarea-field {
+    /* Message*/
+    width: 18rem;
+  }
+
+  #license-field,
+  #submit-field {
+    font-size: 1.2rem;
+  }
+
+  #container-contact>div:first-child {
+    /* The Form*/
+    padding-left: 0%;
+  }
+
+  /* #endregion */
+
+  /* #region [Accessibility] */
+
+  #accessibility {
+    padding-left: 0.5rem;
+  }
+
+  #accessibility h1 {
+    font-size: 3rem;
+    padding-top: 3rem;
+  }
+
+  #accessibility h2 {
+    font-size: 2rem;
+  }
+
+
+  #accessibility p {
+    font-size: 1.35rem;
+  }
+
+  #accessibility p,
+  #accessibility ul {
+    padding-right: 0rem;
+  }
+
+  /* #endregion */
+
+  /* #region Footer */
+
+  nav+p,
+  footer nav a:link,
+  .footer-list-break {
+    font-size: 0.77rem;
+  }
+
+  footer nav li {
+    margin-right: auto;
+  }
+
+  #social-media img {
+    width: 20px;
+    padding-top: 0.9rem;
+    padding-bottom: 0.9rem;
+  }
+
+  /* #endregion */
+
+
+
+
+}
+
+
+/* #endregion */
